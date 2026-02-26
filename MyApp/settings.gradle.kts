@@ -26,3 +26,5 @@ rootProject.name = "MyApp"
 include(":app")
 include(":myapp1")
 include(":control_lesson1")
+include(":buttonclicker")
+include(":buttonclickerr")

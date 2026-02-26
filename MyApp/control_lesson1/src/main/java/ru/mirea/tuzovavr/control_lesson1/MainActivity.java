@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        textViewMain = findViewById(R.id.textView);
+        TextView myTextView = (TextView) findViewById(R.id.textView);
+        myTextView.setText("New text in MIREA");
+        Button button = findViewById(R.id.button);
         editTextMain = findViewById(R.id.editText);
-        buttonMain = findViewById(R.id.button);
+        button.setText("MireaButton");
         imageButtonMain = findViewById(R.id.imageButton);
-        checkBoxMain = findViewById(R.id.checkBox);
+        CheckBox checkBox = findViewById(R.id.checkBox);
+        checkBox.setChecked(true);
         imageViewMain = findViewById(R.id.imageView);
 
     }
