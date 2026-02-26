@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,6 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textViewStudent;
-
     private CheckBox check;
     private Button btnWhoAmI;
     private Button btnItIsNotMe ;
@@ -35,14 +35,18 @@ public class MainActivity extends AppCompatActivity {
         };
         btnWhoAmI.setOnClickListener(oclBtnWhoAmI);
 
-        View.OnClickListener oclBtnItIsNotMe = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                textViewStudent.setText("Это не я сделал");
-                check.performClick();
-            }
-        };
-        btnItIsNotMe.setOnClickListener(oclBtnItIsNotMe);
+        //View.OnClickListener oclBtnItIsNotMe = new View.OnClickListener() {
+           // @Override
+           // public void onClick(View v) {
+            //    textViewStudent.setText("Это не я сделал");
+            //    check.performClick();
+          //  }
+        //};
+       // btnItIsNotMe.setOnClickListener(oclBtnItIsNotMe);
+    }
+    public void onMyButtonClick(View view)
+    {
+        Toast.makeText(this, "Ещё один способ!", Toast.LENGTH_SHORT).show();
     }
 }
 
