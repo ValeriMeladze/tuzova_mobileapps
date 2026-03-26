@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ru.mirea.Tuzova.Lesson3"
 include(":app")
- 
+include(":app:intentapp")
